@@ -5,95 +5,82 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 600px;
     width: 100%;
     background-color: #fff;
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.top-bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
-.top-bar span {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.nav-icons a {
-    margin-left: 15px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.profile-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.profile-left {
+header {
     text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #777;
 }
 
 .profile-image {
     width: 150px;
     height: 150px;
-    border-radius: 12px;
-    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
 }
 
-.profile-left h1 {
-    margin-top: 15px;
-    font-size: 2.5rem;
-    font-weight: bold;
+.about-me, .social-links {
+    margin-bottom: 20px;
 }
 
-.profile-right {
-    flex: 1;
-    margin-left: 20px;
-}
-
-.job-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.job-description {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.additional-info {
-    margin-top: 30px;
-    text-align: center;
-}
-
-.interests h2 {
+.about-me h2, .social-links h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
 
-.interests p {
+.about-me p {
     font-size: 1rem;
-    color: #666;
+    line-height: 1.6;
+}
+
+.social-links ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.social-links ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.social-links ul li a:hover {
+    color: #007BFF;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
 }
